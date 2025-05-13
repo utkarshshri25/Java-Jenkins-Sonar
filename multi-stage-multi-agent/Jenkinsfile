@@ -9,13 +9,13 @@ pipeline {
         sh 'mvn --version'
       }
     }
-    stage('Front-end') {
+    stage('Front-end') 
+    {
       agent {
-        docker { image 'node:16-alpine' }
+        docker { image'node:16-alpine' }
       }
       steps {
         sh 'node --version'
-      }
-    }
+      }}
   }
 }
